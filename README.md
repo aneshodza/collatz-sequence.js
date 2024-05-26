@@ -73,3 +73,22 @@ In the file `./comparison.py` you can find the needed python code to generade th
 This is how the runtimes compare:  
 
 ![Comparison image](./docs/images/runtimes.png)
+
+## Is the set of all Collatz numbers up to `x=90,000,000` semi-decidable or even decidable? 
+The set of all Collatz numbers up to `x=90,000,000` is decidable.  
+
+**Reason:**  
+As the first exercise calculates this exact question it is decidable.
+Every number under `90,000,000` was decided in a finite time.
+
+## Is the set of all Collatz numbers `P(∞)` semi-decidable or even decidable?
+The set of all Collatz numbers `P(∞)` is semi-decidable.
+
+**Reason:**  
+As we don't know if every single `n in N` has a Collatz-Sequence, we cannot be sure that it is fully decidable. Our program only terminates when the sequence is done, so any `n not in Collatz-able` would never terminate.
+
+## Prove or disprove informally the following statement: "The time complexity of the Collatz program is not determinable."
+This statement is probably true
+
+**Reason:**  
+As this conjecture is still unsolved there is no definite way to tell if there is a pattern in the time-complexity.
